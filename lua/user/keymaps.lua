@@ -44,12 +44,15 @@ keymap("n", "<leader>ff", "<cmd>lua require'telescope.builtin'.find_files(requir
 keymap("n", "<C-p>", "<cmd>Telescope live_grep<CR>", opts)
 
 -- Nvim Tree
--- toggle
-keymap("n", "<leader>j", ":NvimTreeToggle<CR>", opts)
+-- Tree Open
+keymap("n", "<leader>j", ":NvimTreeOpen<CR>", opts)
+-- Tree Close
+keymap("n", "<A-c>", ":NvimTreeClose<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "jp", "<ESC><CMD>w", opts)
 
 -- Visual --
 -- Stay in indent mode

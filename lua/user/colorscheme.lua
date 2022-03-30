@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme tokyonight
+  colorscheme onedarker
 catch /^Vim\%((\a\+)\)\=:E185/
   vim.notify("could not set colorscheme to tokyonight")
   colorscheme default
